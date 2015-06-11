@@ -9,6 +9,8 @@
 import UIKit
 
 class WildCardViewController: UIViewController {
+    var cardSelectedClosure: ((Int) -> Void)?
+    
     init() {
         super.init(nibName: "WildCardViewController", bundle: nil)
     }
@@ -16,6 +18,7 @@ class WildCardViewController: UIViewController {
     required init(coder aDecoder: NSCoder) {
         fatalError("Not implemented")
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

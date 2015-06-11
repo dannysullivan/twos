@@ -60,6 +60,10 @@ class GameViewController: UIViewController {
     
     func showWildCardModal() {
         let wcvc = WildCardViewController()
+        let closure = { (selectedCard: Int) -> Void in
+            self.didSelectCard(selectedCard)
+        }
+        wcvc.cardSelectedClosure = closure
         presentViewController(wcvc, animated: true, completion: nil)
     }
     
