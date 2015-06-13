@@ -28,10 +28,12 @@ class ResultViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         if let card = selectedCard {
-            if card == 2 {
+            switch card {
+            case 2:
                 resultLabel.text = "You got a 2! You win twos!"
-            }
-            else {
+            case 10:
+                performSegueWithIdentifier("WildCardModal", sender: self)
+            default:
                 resultLabel.text = "You got a \(card)! You lose twos!"
             }
         }

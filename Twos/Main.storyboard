@@ -143,6 +143,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="resultLabel" destination="nWR-LH-Jf8" id="FUg-ul-WKg"/>
+                        <segue destination="4mC-uI-XWQ" kind="presentation" identifier="WildCardModal" id="L4O-mJ-K4k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rks-AG-m7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -167,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="427" y="197"/>
         </scene>
-        <!--View Controller-->
+        <!--Wild Card View Controller-->
         <scene sceneID="eSu-90-ODb">
             <objects>
-                <viewController id="4mC-uI-XWQ" sceneMemberID="viewController">
+                <viewController id="4mC-uI-XWQ" customClass="WildCardViewController" customModule="Twos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uMx-P0-8QY"/>
                         <viewControllerLayoutGuide type="bottom" id="3dV-hH-4wQ"/>
@@ -178,13 +179,36 @@
                     <view key="view" contentMode="scaleToFill" id="1sE-Ng-6Uc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wild Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFa-2K-Tq4">
+                                <rect key="frame" x="16" y="74" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It can be anything but a 2!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF3-4j-0HL">
+                                <rect key="frame" x="87" y="126" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFs-Vy-1Qm">
+                                <rect key="frame" x="16" y="221" width="343" height="30"/>
+                                <state key="normal" title="Pick a 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectWildCard:" destination="4mC-uI-XWQ" eventType="touchUpInside" id="5aI-q8-WWm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRU-Z1-Wx7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2319.5" y="682.5"/>
+            <point key="canvasLocation" x="2319.5" y="773.5"/>
         </scene>
     </scenes>
 </document>

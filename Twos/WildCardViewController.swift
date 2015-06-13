@@ -9,20 +9,25 @@
 import UIKit
 
 class WildCardViewController: UIViewController {
-    var cardSelectedClosure: ((Int) -> Void)?
     
-    init() {
-        super.init(nibName: "WildCardViewController", bundle: nil)
-    }
+    var selectedCard: Int?
     
-    required init(coder aDecoder: NSCoder) {
-        fatalError("Not implemented")
+    @IBAction func selectWildCard(sender: UIButton) {
+        selectedCard = 3
+        presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        let nc = presentingViewController as! UINavigationController
+        let rvc = nc.viewControllers.last as! ResultViewController
+        rvc.selectedCard = selectedCard
     }
 
     override func didReceiveMemoryWarning() {
