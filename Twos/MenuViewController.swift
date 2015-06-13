@@ -8,21 +8,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
-
-    @IBAction func startGame(sender: UIButton) {
-        let deck = Deck()
-        let gvc = GameViewController(deck: deck)
-        showViewController(gvc, sender: self)
-    }
-    
-    init() {
-        super.init(nibName: "WelcomeViewController", bundle: nil)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        fatalError("whatever")
-    }
+class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

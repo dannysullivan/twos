@@ -11,13 +11,12 @@
 		9B74DF011B28B0B700E6178B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B74DF001B28B0B700E6178B /* Images.xcassets */; };
 		9B74DF041B28B0B700E6178B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B74DF021B28B0B700E6178B /* LaunchScreen.xib */; };
 		9B74DF101B28B0B700E6178B /* TwosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B74DF0F1B28B0B700E6178B /* TwosTests.swift */; };
-		9B8DB2A31B291423009EB4A8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DB2A11B291423009EB4A8 /* WelcomeViewController.swift */; };
-		9B8DB2A41B291423009EB4A8 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8DB2A21B291423009EB4A8 /* WelcomeViewController.xib */; };
+		9B8DB2A31B291423009EB4A8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DB2A11B291423009EB4A8 /* MenuViewController.swift */; };
 		9B8DB2A71B291C2A009EB4A8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DB2A51B291C2A009EB4A8 /* GameViewController.swift */; };
-		9B8DB2A81B291C2A009EB4A8 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8DB2A61B291C2A009EB4A8 /* GameViewController.xib */; };
 		9B8DB2AA1B29C5C9009EB4A8 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DB2A91B29C5C9009EB4A8 /* Deck.swift */; };
 		9B8DB2AD1B29E11F009EB4A8 /* WildCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DB2AB1B29E11F009EB4A8 /* WildCardViewController.swift */; };
-		9B8DB2AE1B29E11F009EB4A8 /* WildCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8DB2AC1B29E11F009EB4A8 /* WildCardViewController.xib */; };
+		9B8ECDDB1B2A125F00664390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8ECDDA1B2A125F00664390 /* Main.storyboard */; };
+		9B8ECE131B2A5B5D00664390 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ECE121B2A5B5D00664390 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +38,12 @@
 		9B74DF091B28B0B700E6178B /* TwosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B74DF0E1B28B0B700E6178B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B74DF0F1B28B0B700E6178B /* TwosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwosTests.swift; sourceTree = "<group>"; };
-		9B8DB2A11B291423009EB4A8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		9B8DB2A21B291423009EB4A8 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		9B8DB2A11B291423009EB4A8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9B8DB2A51B291C2A009EB4A8 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		9B8DB2A61B291C2A009EB4A8 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		9B8DB2A91B29C5C9009EB4A8 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		9B8DB2AB1B29E11F009EB4A8 /* WildCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WildCardViewController.swift; sourceTree = "<group>"; };
-		9B8DB2AC1B29E11F009EB4A8 /* WildCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WildCardViewController.xib; sourceTree = "<group>"; };
+		9B8ECDDA1B2A125F00664390 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9B8ECE121B2A5B5D00664390 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				9B74DEF91B28B0B700E6178B /* AppDelegate.swift */,
-				9B8DB2A11B291423009EB4A8 /* WelcomeViewController.swift */,
+				9B8DB2A11B291423009EB4A8 /* MenuViewController.swift */,
 				9B8DB2A51B291C2A009EB4A8 /* GameViewController.swift */,
-				9B8DB2A61B291C2A009EB4A8 /* GameViewController.xib */,
+				9B8ECE121B2A5B5D00664390 /* ResultViewController.swift */,
+				9B8ECDDA1B2A125F00664390 /* Main.storyboard */,
 				9B8DB2AB1B29E11F009EB4A8 /* WildCardViewController.swift */,
-				9B8DB2AC1B29E11F009EB4A8 /* WildCardViewController.xib */,
 				9B8DB2A91B29C5C9009EB4A8 /* Deck.swift */,
-				9B8DB2A21B291423009EB4A8 /* WelcomeViewController.xib */,
 				9B74DF001B28B0B700E6178B /* Images.xcassets */,
 				9B74DF021B28B0B700E6178B /* LaunchScreen.xib */,
 				9B74DEF71B28B0B700E6178B /* Supporting Files */,
@@ -207,11 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B8DB2AE1B29E11F009EB4A8 /* WildCardViewController.xib in Resources */,
-				9B8DB2A81B291C2A009EB4A8 /* GameViewController.xib in Resources */,
 				9B74DF041B28B0B700E6178B /* LaunchScreen.xib in Resources */,
+				9B8ECDDB1B2A125F00664390 /* Main.storyboard in Resources */,
 				9B74DF011B28B0B700E6178B /* Images.xcassets in Resources */,
-				9B8DB2A41B291423009EB4A8 /* WelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,9 +226,10 @@
 			files = (
 				9B8DB2AD1B29E11F009EB4A8 /* WildCardViewController.swift in Sources */,
 				9B8DB2AA1B29C5C9009EB4A8 /* Deck.swift in Sources */,
-				9B8DB2A31B291423009EB4A8 /* WelcomeViewController.swift in Sources */,
+				9B8DB2A31B291423009EB4A8 /* MenuViewController.swift in Sources */,
 				9B8DB2A71B291C2A009EB4A8 /* GameViewController.swift in Sources */,
 				9B74DEFA1B28B0B700E6178B /* AppDelegate.swift in Sources */,
+				9B8ECE131B2A5B5D00664390 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

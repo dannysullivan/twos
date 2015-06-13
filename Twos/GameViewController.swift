@@ -10,10 +10,18 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    var deck: Deck
+    var deck = Deck()
+    var selectedCardIndex: Int?
+    var selectedCardValue: Int?
 
-    @IBOutlet weak var cardNumberField: UITextField!
-    @IBOutlet weak var selectedCardLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var cardIndexLabel: UILabel!
+    @IBOutlet weak var cardIndexSlider: UISlider!
+    
+    @IBAction func cardIndexSliderChanged(sender: UISlider) {
+        selectedCardIndex = Int(sender.value + 0.5)
+        cardIndexLabel.text = "\(selectedCardIndex!)"
+    }
     
     @IBAction func getATen(sender: UIButton) {
         didSelectCard(10)
@@ -23,22 +31,13 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func submit(sender: UIButton) {
-        if let cardIndex = cardNumberField.text.toInt() {
-            if let selectedCard = deck.cardAtIndex(cardIndex) {
-               didSelectCard(selectedCard)
+        if let index = selectedCardIndex {
+            if let selectedCard = deck.cardAtIndex(index) {
+                didSelectCard(selectedCard)
             }
         }
     }
     
-    init(deck: Deck) {
-        self.deck = deck
-        super.init(nibName: "GameViewController", bundle: nil)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        fatalError("whatever")
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,21 +49,23 @@ class GameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        selectedCardIndex = 25
+        cardIndexLabel.text = "25"
+        cardIndexSlider.value = 25
+    }
+    
     func didSelectCard(selectedCard: Int) {
-        switch selectedCard {
-        case 2: selectedCardLabel.text = "You got a 2! You win twos!"
-        case 10: showWildCardModal()
-        default: selectedCardLabel.text = "You got a \(selectedCard)! You lose twos!"
-        }
+        selectedCardValue = selectedCard
+        
+        performSegueWithIdentifier("ResultModal", sender: self)
     }
     
-    func showWildCardModal() {
-        let wcvc = WildCardViewController()
-        let closure = { (selectedCard: Int) -> Void in
-            self.didSelectCard(selectedCard)
-        }
-        wcvc.cardSelectedClosure = closure
-        presentViewController(wcvc, animated: true, completion: nil)
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        let rvc = segue.destinationViewController as! ResultViewController
+        rvc.selectedCard = selectedCardValue!
     }
-    
 }
