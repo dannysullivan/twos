@@ -10,10 +10,10 @@ import UIKit
 
 class WildCardViewController: UIViewController {
     
-    var selectedCard: Int?
+    var selectedCard: CardValue?
     
     @IBAction func selectWildCard(sender: UIButton) {
-        selectedCard = 3
+        selectedCard = .Three
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     

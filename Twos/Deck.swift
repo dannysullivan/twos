@@ -10,14 +10,14 @@ import UIKit
 
 class Deck: NSObject {
     
-    var cards: [Int]
+    var cards: [CardValue]
     let cardsInDeck = 52
     
     override init() {
-        var cards: [Int] = []
+        var cards: [CardValue] = []
         for _ in 0...3 {
-            for i in 1...13 {
-                cards.append(i)
+            for card in CardValue.allCards {
+                cards.append(card)
             }
         }
         
@@ -30,7 +30,7 @@ class Deck: NSObject {
         super.init()
     }
     
-    func cardAtIndex(index: Int) -> Int? {
+    func cardAtIndex(index: Int) -> CardValue? {
         return cards[index]
 
     }

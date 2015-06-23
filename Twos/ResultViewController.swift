@@ -10,7 +10,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    var selectedCard: Int?
+    var selectedCard: CardValue?
     
     @IBOutlet weak var resultLabel: UILabel!
         
@@ -29,9 +29,9 @@ class ResultViewController: UIViewController {
         super.viewWillAppear(animated)
         if let card = selectedCard {
             switch card {
-            case 2:
+            case .Two:
                 resultLabel.text = "You got a 2! You win twos!"
-            case 10:
+            case .Ten:
                 performSegueWithIdentifier("WildCardModal", sender: self)
             default:
                 resultLabel.text = "You got a \(card)! You lose twos!"

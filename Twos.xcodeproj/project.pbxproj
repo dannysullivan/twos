@@ -17,6 +17,7 @@
 		9B8DB2AD1B29E11F009EB4A8 /* WildCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DB2AB1B29E11F009EB4A8 /* WildCardViewController.swift */; };
 		9B8ECDDB1B2A125F00664390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8ECDDA1B2A125F00664390 /* Main.storyboard */; };
 		9B8ECE131B2A5B5D00664390 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ECE121B2A5B5D00664390 /* ResultViewController.swift */; };
+		9B8ECE491B2BD2E900664390 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ECE481B2BD2E900664390 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9B8DB2AB1B29E11F009EB4A8 /* WildCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WildCardViewController.swift; sourceTree = "<group>"; };
 		9B8ECDDA1B2A125F00664390 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9B8ECE121B2A5B5D00664390 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		9B8ECE481B2BD2E900664390 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				9B74DEF91B28B0B700E6178B /* AppDelegate.swift */,
 				9B8DB2A11B291423009EB4A8 /* MenuViewController.swift */,
+				9B8ECE481B2BD2E900664390 /* Constants.swift */,
 				9B8DB2A51B291C2A009EB4A8 /* GameViewController.swift */,
 				9B8ECE121B2A5B5D00664390 /* ResultViewController.swift */,
 				9B8ECDDA1B2A125F00664390 /* Main.storyboard */,
@@ -228,6 +231,7 @@
 				9B8DB2AA1B29C5C9009EB4A8 /* Deck.swift in Sources */,
 				9B8DB2A31B291423009EB4A8 /* MenuViewController.swift in Sources */,
 				9B8DB2A71B291C2A009EB4A8 /* GameViewController.swift in Sources */,
+				9B8ECE491B2BD2E900664390 /* Constants.swift in Sources */,
 				9B74DEFA1B28B0B700E6178B /* AppDelegate.swift in Sources */,
 				9B8ECE131B2A5B5D00664390 /* ResultViewController.swift in Sources */,
 			);
