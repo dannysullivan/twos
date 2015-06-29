@@ -24,10 +24,14 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func getATen(sender: UIButton) {
-        didSelectCard(Card(cardName: "ten_of_spades", event: .Wild))
+        didSelectCard(Card(cardName: "10_of_spades", event: .Wild))
     }
     @IBAction func getATwo(sender: UIButton) {
-        didSelectCard(Card(cardName: "two_of_diamonds", event: .Win))
+        didSelectCard(Card(cardName: "2_of_diamonds", event: .Win))
+    }
+    
+    @IBAction func getAQueen(sender: UIButton) {
+        didSelectCard(Card(cardName: "queen_of_hearts", event: .GoAgain))
     }
     
     @IBAction func submit(sender: UIButton) {

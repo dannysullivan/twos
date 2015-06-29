@@ -34,7 +34,10 @@ class ResultViewController: UIViewController {
             case .Win:
                 resultLabel.text = "You win Twos!"
             case .Wild:
+                resultLabel.text = "Wild card!"
                 performSegueWithIdentifier("WildCardModal", sender: self)
+            case .GoAgain:
+                resultLabel.text = "Go again!"
             default:
                 resultLabel.text = "You lose Twos!"
             }
