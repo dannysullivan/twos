@@ -14,3 +14,11 @@ enum CardEvent {
     case GoAgain
     case Lose
 }
+
+struct TwosConstants {
+    static let Suits = ["diamonds", "spades", "hearts", "clubs"]
+    static let WinCards = ["2"]
+    static let LoseCards = ["3", "4", "5", "6", "7", "8", "9", "jack", "king", "ace"]
+    static let WildCards = ["10"]
+    static let GoAgainCards = ["queen"]
+}
