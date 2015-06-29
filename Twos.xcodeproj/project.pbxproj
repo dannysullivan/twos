@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B5DD30A1B40CF2400CA3385 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DD3091B40CF2400CA3385 /* Card.swift */; };
 		9B74DEFA1B28B0B700E6178B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B74DEF91B28B0B700E6178B /* AppDelegate.swift */; };
 		9B74DF011B28B0B700E6178B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B74DF001B28B0B700E6178B /* Images.xcassets */; };
 		9B74DF041B28B0B700E6178B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B74DF021B28B0B700E6178B /* LaunchScreen.xib */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B5DD3091B40CF2400CA3385 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9B74DEF41B28B0B700E6178B /* Twos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B74DEF81B28B0B700E6178B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B74DEF91B28B0B700E6178B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				9B8ECDDA1B2A125F00664390 /* Main.storyboard */,
 				9B8DB2AB1B29E11F009EB4A8 /* WildCardViewController.swift */,
 				9B8DB2A91B29C5C9009EB4A8 /* Deck.swift */,
+				9B5DD3091B40CF2400CA3385 /* Card.swift */,
 				9B74DF001B28B0B700E6178B /* Images.xcassets */,
 				9B74DF021B28B0B700E6178B /* LaunchScreen.xib */,
 				9B74DEF71B28B0B700E6178B /* Supporting Files */,
@@ -234,6 +237,7 @@
 				9B8ECE491B2BD2E900664390 /* Constants.swift in Sources */,
 				9B74DEFA1B28B0B700E6178B /* AppDelegate.swift in Sources */,
 				9B8ECE131B2A5B5D00664390 /* ResultViewController.swift in Sources */,
+				9B5DD30A1B40CF2400CA3385 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@ class GameViewController: UIViewController {
     
     var deck = Deck()
     var selectedCardIndex: Int?
-    var selectedCardValue: CardValue?
+    var selectedCard: Card?
 
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var cardIndexLabel: UILabel!
@@ -24,10 +24,10 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func getATen(sender: UIButton) {
-        didSelectCard(.Ten)
+        didSelectCard(Card(cardName: "ten_of_spades", event: .Wild))
     }
     @IBAction func getATwo(sender: UIButton) {
-        didSelectCard(.Two)
+        didSelectCard(Card(cardName: "two_of_diamonds", event: .Win))
     }
     
     @IBAction func submit(sender: UIButton) {
@@ -57,8 +57,8 @@ class GameViewController: UIViewController {
         cardIndexSlider.value = 25
     }
     
-    func didSelectCard(selectedCard: CardValue) {
-        selectedCardValue = selectedCard
+    func didSelectCard(selectedCard: Card) {
+        self.selectedCard = selectedCard
         
         performSegueWithIdentifier("ResultModal", sender: self)
     }
@@ -66,6 +66,6 @@ class GameViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         let rvc = segue.destinationViewController as! ResultViewController
-        rvc.selectedCard = selectedCardValue!
+        rvc.selectedCard = selectedCard!
     }
 }

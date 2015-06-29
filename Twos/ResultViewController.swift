@@ -10,8 +10,9 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    var selectedCard: CardValue?
+    var selectedCard: Card?
     
+    @IBOutlet weak var cardImage: UIImageView!
     @IBOutlet weak var resultLabel: UILabel!
         
     override func viewDidLoad() {
@@ -27,14 +28,15 @@ class ResultViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        cardImage.image = UIImage(named: selectedCard!.cardName)
         if let card = selectedCard {
-            switch card {
-            case .Two:
-                resultLabel.text = "You got a 2! You win twos!"
-            case .Ten:
+            switch card.event {
+            case .Win:
+                resultLabel.text = "You win Twos!"
+            case .Wild:
                 performSegueWithIdentifier("WildCardModal", sender: self)
             default:
-                resultLabel.text = "You got a \(card)! You lose twos!"
+                resultLabel.text = "You lose Twos!"
             }
         }
     }

@@ -137,11 +137,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mYL-ja-YCl">
+                                <rect key="frame" x="16" y="94" width="343" height="553"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="cardImage" destination="mYL-ja-YCl" id="BBd-gj-1ki"/>
                         <outlet property="resultLabel" destination="nWR-LH-Jf8" id="FUg-ul-WKg"/>
                         <segue destination="4mC-uI-XWQ" kind="presentation" identifier="WildCardModal" id="L4O-mJ-K4k"/>
                     </connections>
